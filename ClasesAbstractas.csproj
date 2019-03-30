@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsClientesConContacto.cs" />
     <Compile Include="clsAbsClientes.cs" />
     <Compile Include="clsClientesBase.cs" />
+    <Compile Include="clsDirecciones.cs" />
+    <Compile Include="clsImpresion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

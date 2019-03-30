@@ -10,14 +10,14 @@ namespace ClasesAbstractas
     {
         static void Main(string[] args)
         {
-            clsClientesBase cliente = new clsClientesBase(0, "Jonathan Villeda",
+            clsClientesConContacto cliente = new clsClientesConContacto(0, "Jonathan Villeda",
                 "001",
                 "JSVP",
-                1, "Jonathan Villeda");
-            Console.WriteLine(cliente.Clave + " " + cliente.Nombre);
-            Console.WriteLine(cliente.TipoRegimen);
-            Console.WriteLine(cliente.RFC);
-            Console.ReadKey();
+                1, "Jonathan Villeda", "12345", "", "johnsvill@hotmail.com", "Av Chapin", "119", "", "la calle de las Ilusiones",
+                   "Mixcp", "Ciudad de Guatemala", "12345678");
+            clsImpresion Impresion;
+            Impresion = new clsImpresion();
+            Impresion.ImprimeCliente(cliente);
         }
     }
 }
